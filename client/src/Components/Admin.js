@@ -41,7 +41,6 @@ import LockIcon from "@material-ui/icons/LockOutlined";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 // import withStyles from "@material-ui/core/styles/withStyles";
-import ChainImage from "../Images/chainT.png";
 import Link from "react-router-dom/Link";
 import { useHistory } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
@@ -305,7 +304,7 @@ class Admin extends React.Component {
             convertToBlockChainStruct
           )
           .send({ from: caller })
-          .on("receipt", function(receipt) {
+          .on("receipt", function (receipt) {
             console.log(receipt);
             console.log(receipt.events);
           })
@@ -676,15 +675,6 @@ class Admin extends React.Component {
                         </Button>
                       </DialogActions>
                     </Dialog>
-                    <Button
-                      onClick={() => this.debugFiller()}
-                      fullWidth
-                      variant="outlined"
-                      color="primary"
-                      className={classes.submit}
-                    >
-                      Autofill
-                    </Button>
                     <Button
                       onClick={() => this.openDialog()}
                       type="submit"

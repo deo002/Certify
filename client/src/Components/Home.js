@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Assets
-import BlockchainCredentialsImage from "../Images/blockchain_credentials.png";
+import IIITNImage from "../Images/iiitn.png";
 
 // External Components
 import {
@@ -60,16 +60,7 @@ function Home() {
               Verifiable Certificates
             </Box>
             <Box m={0.5} />
-            <Box style={{ fontSize: "60px", fontWeight: "900" }}>Certoshi</Box>
-            <Box m={1.5} />
-            <Typography variant="body2">
-              A Decentralized Certificate Issuance and Verification System to
-              create certificates that are Immutable, Cryptographically Secured,
-              and have Zero Downtime. All powered by decentralized Ethereum
-              Smart Contracts{" "}
-            </Typography>
-            <Box m={1.5} />
-            <Typography variant="h6">What are you looking for</Typography>
+            <Box style={{ fontSize: "60px", fontWeight: "900" }}>Certify</Box>
             <Box m={1.5} />
             <Box display="flex">
               <Button
@@ -96,11 +87,7 @@ function Home() {
           </Box>
         </Grid>
         {md && (
-          <Grid item xs={12} md={6}>
-            <Box style={{ height: "100%" }} display="flex" alignItems=" center">
-              <img src={BlockchainCredentialsImage} style={{ height: "85%" }} />
-            </Box>
-          </Grid>
+          <img src={IIITNImage} style={{ height: "40%", marginTop: 269, marginLeft: 269 }} />
         )}
       </Grid>
     </>

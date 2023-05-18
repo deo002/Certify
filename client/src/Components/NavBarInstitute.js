@@ -161,7 +161,7 @@ class NavBarInstitute extends React.Component {
               color="primary"
               noWrap
             >
-              Certoshi
+              Certify
             </Typography>
             <div className={classes.generateCertificate}>
               <Typography
